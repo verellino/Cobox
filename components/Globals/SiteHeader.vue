@@ -18,7 +18,7 @@
             <div class="ml-10 flex items-center">
                 <nuxt-link
                   to="/"
-                  class="px-3 py-2 rounded-md text-sm font-medium text-red focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
+                  class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-brand-primary focus:text-white focus:bg-purple-700"
                 >Home</nuxt-link>
                 
                 <a
@@ -86,32 +86,33 @@
       <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
         <div class="px-2 pt-2 pb-3 sm:px-3">
           <nuxt-link
-            to="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
+            to="/"
+            class="px-3 py-2 block rounded-md font-medium text-red focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
           >Home</nuxt-link>
+          
           <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
-          >About Us</a>
-          <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
+            href="#product"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
           >Product</a>
           <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
-          >Partnership</a>
-          <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
-          >Business Schematic</a>
-          <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
+            href="#marketTarget"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
           >Market Target</a>
           <a
-            to="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 focus:outline-none focus:bg-purple-700"
+            href="#aboutUs"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
+          >About Us</a>
+          <a
+            href="#partnership"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
+          >Partnership</a>
+          <nuxt-link
+            to="/about"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
+          >Business Schematic</nuxt-link>
+          <a
+            href="#contactUs"
+            class="px-3 py-2 block rounded-md font-medium text-gray-900 hover:text-purple-800 focus:outline-none active:text-red focus:text-white focus:bg-purple-700"
           >Contact Us</a>
         </div>
       </div>
