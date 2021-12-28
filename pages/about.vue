@@ -28,8 +28,8 @@
           </div>
           <div class="w-full md:w-1/2">
             <div class="flex justify-center items-center">
-              <div class="shadow w-full h-auto mt-12 sm:h-96 sm:w-96 flex justify-center items-center">
-                <img src="~assets/images/cobox.jpg" alt="Cobox" class="block m-auto">
+              <div class="w-full h-auto mt-12 flex justify-center items-center">
+                <img src="~assets/images/cobox.jpg" alt="Cobox" class="shadow block m-auto rounded-xl">
               </div>
             </div>
           </div>
@@ -45,7 +45,15 @@
           Great! Your message has been sent successfully. I will try to respond
           quickly.
         </div>
-        <form v-else class="w-full max-w-7xl mt-16" v-on:submit.prevent="sendMessage">
+        <form 
+        v-else 
+        class="w-full max-w-7xl mt-16" 
+        v-on:submit.prevent="sendMessage" 
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field" 
+        name="partner-form">
+            <input type="hidden" name="partner-form" value="ask-question" />
             <div class="flex flex-wrap -mx-3 mb-6">
               <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
                 Bummer, Something went wrong. Did you fill out all of the fields?

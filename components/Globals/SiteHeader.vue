@@ -1,16 +1,16 @@
 <template>
   <div>
     <nav class="bg-white fixed w-full z-50 top-0 drop-shadow-xl">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <div class="flex items-center">
             <nuxt-link class="flex-shrink-0" to="/">
-              <!-- <img
-                class="w-20 object-fit"
-                src="~assets/images/VVVLogo.png"
-                alt="Valuable Varanus Vault logo"
-              > -->
+              <img
+                class="w-14 object-fit"
+                src="~assets/images/coboxlogo.png"
+                alt="Cobox logo"
+              >
             </nuxt-link>
           </div>
           <!-- Right nav -->

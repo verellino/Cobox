@@ -6,11 +6,11 @@
                 <!-- logo  -->
                 <div class="flex items-center">
                   <nuxt-link class="flex-shrink-0 mb-4" to="/">
-                    <!-- <img
+                    <img
                       class="w-24 object-fit"
-                      src="~assets/images/VVVLogo.png"
-                      alt="Valuable Varanus Vault logo"
-                    > -->
+                      src="~assets/images/coboxlogo.png"
+                      alt="Cobix logo"
+                    >
                   </nuxt-link>
                 </div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->

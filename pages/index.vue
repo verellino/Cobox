@@ -3,10 +3,10 @@
     <main>
       <div class="mt-16">
         <!-- Hero Section  -->
-      <div class="w-full bg-right sm:bg-center bg-no-repeat bg-cover py-8 md:py-40" :style="{ backgroundImage: `url(${backgroundImage})`}">
+      <div class="w-full bg-right sm:bg-center bg-no-repeat bg-cover py-8 md:py-20" :style="{ backgroundImage: `url(${backgroundImage})`}">
       
-        <div class="hero max-w-7xl mx-auto flex flex-col sm:flex-row md:py-30 py-8 px-4 md:px-8">
-          <div class="w-full sm:w-1/2 py-6 sm:px-0">
+        <div class="hero max-w-7xl mx-auto flex flex-col sm:flex-row md:py-12 py-8 px-4 md:px-8">
+          <div class="w-full sm:w-1/2 py-6 sm:px-0 self-center">
             <h1>Co-Box Vaccine Carrier</h1>
             <p>Distribute the vaccine to overcome the pandemic!</p>
             <a href="#product" class="my-8 inline-block rounded-md text-white py-3 px-8 bg-brand-primary btn-brand">
@@ -15,6 +15,7 @@
           </div>
           <div class="w-full sm:w-1/2 my-5">
             <!-- <img src="~assets/images/VVVLogo.png" alt="Valuable Varanus Vault" class="w-60"> -->
+            <img src="~assets/images/cobox/425322.jpg" alt="Cobox image 2" class="rounded-xl">
           </div>
         </div>
       </div>
@@ -24,7 +25,7 @@
         <div class="py-6 flex flex-col sm:flex-row justify-center items-center">
           <div class="w-full md:w-1/2 flex justify-center items-center">
             <div class="h-40 w-40 sm:h-96 sm:w-96 flex justify-center items-center">
-              <img src="~assets/images/cobox1.jpg" alt="Cobox" class="block m-auto">
+              <img src="~assets/images/cobox1.jpg" alt="Cobox" class="block m-auto rounded-md">
             </div>
           </div>
           <div class="w-full md:w-1/2">
@@ -35,7 +36,7 @@
       </div>
       
       <!-- Our Solution Section  -->
-      <div id="ourSolution" class="max-w-7xl mx-auto py-12 md:py-20 px-4 md:px-8">
+      <div id="ourSolution" class="max-w-7xl mx-auto pt-12 pb-6 md:pt-20 md:pb-8 px-4 md:px-8">
         <div class="py-6 flex flex-col sm:flex-row justify-center items-center">
           <div class="w-full md:w-1/2">
             <h2 class="text-brand-primary">Our Solution</h2>
@@ -51,6 +52,27 @@
         </div>
       </div>
 
+      <!-- Image Gallery Section  -->
+      <div class="w-full grid grid-cols-2 sm:grid-cols-4 my-6 md:my-10">
+        <div class="p-2">
+          <img src="~assets/images/cobox/404878.jpg" alt="Cobox image 1" class="rounded-lg">
+        </div>
+
+        <div class="p-2">
+          <img src="~assets/images/cobox/425322.jpg" alt="Cobox image 2" class="rounded-lg">
+        </div>
+
+        <div class="p-2">
+          <img src="~assets/images/cobox/423389.jpg" alt="Cobox image 4" class="h-full rounded-lg">
+        </div>
+
+        <div class="p-2">
+          <img src="~assets/images/cobox/4527891.jpg" alt="Cobox image 5" class="rounded-lg">
+        </div>
+
+
+      </div>
+
       <!-- Market Target Section  -->
       <div id="marketTarget" class="w-full py-12 md:py-20 px-4 md:px-8 bg-brand-primary text-white">
         <h2 class="text-center text-white mb-12">Market Target</h2>
@@ -62,7 +84,7 @@
       </div>
 
       <!-- About Us Section  -->
-      <div id="aboutUs" class="max-w-7xl mx-auto py-12 md:py-20 px-4 md:px-8">
+      <div id="aboutUs" class="max-w-7xl mx-auto py-8 md:py-12  px-4 md:px-8">
         <div class="py-6 flex flex-col justify-center items-center">
           <h2>About Us</h2>
           <p class="w-full">Co-Box merupakan vaccine carrier dengan sistem pendinginan menggunakan termoelektrik yang terintegrasi dengan sistem monitoring dan kontrol temperatur sehingga dapat menjaga temperatur vaksin secara konsisten dibandingkan vaccine carrier konvensional yang hanya menggunakan ice pack. Visi kami membantu penanganan pandemi COVID-19 dan pemerataan vaksinasi bagi masyarakat Indonesia melalui proses distribusi vaksin yang aman dan nyaman, dengan misi menyediakan vaccine carrier dengan fitur-fitur yang mempermudah dan menjamin terlaksana nya rantai-dingin vaksin yang aman dengan kualitas vaksin yang terjaga.</p>
@@ -71,6 +93,8 @@
           </div>
         </div>
       </div>
+
+      
 
       <!-- Partnership Opportunity Section  -->
       <div id="partnership" class="w-full mx-auto py-12 md:py-20 px-4 md:px-8 bg-blue-300">
@@ -96,10 +120,18 @@
           <h2>Reach out to our team</h2>
 
           <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-          Great! Your message has been sent successfully. I will try to respond
+          Great! Your message has been sent successfully. We will try to respond
           quickly.
         </div>
-        <form v-else class="w-full max-w-7xl mt-16" v-on:submit.prevent="sendMessage">
+        <form 
+        v-else 
+        class="w-full max-w-7xl mt-16" 
+        v-on:submit.prevent="sendMessage" 
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field" 
+        name="partner-form">
+            <input type="hidden" name="partner-form" value="ask-question" />
             <div class="flex flex-wrap -mx-3 mb-6">
               <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
                 Bummer, Something went wrong. Did you fill out all of the fields?
