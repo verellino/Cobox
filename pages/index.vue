@@ -118,19 +118,19 @@
       <div id="contactUs" class="max-w-7xl mx-auto py-12 md:py-20 px-4 md:px-8">
         <div class="py-6 flex flex-col justify-center items-center">
           <h2>Reach out to our team</h2>
-
+          
           <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-          Great! Your message has been sent successfully. We will try to respond
-          quickly.
-        </div>
-        <form 
-        v-else 
-        class="w-full max-w-7xl mt-16" 
-        v-on:submit.prevent="sendMessage" 
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field" 
-        name="partner-form">
+            Great! Your message has been sent successfully. We will try to respond
+            quickly.
+          </div>
+          <form 
+            v-else 
+            class="w-full max-w-7xl mt-16" 
+            v-on:submit.prevent="sendMessage" 
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field" 
+            name="partner-form">  
             <input type="hidden" name="partner-form" value="ask-question" />
             <div class="flex flex-wrap -mx-3 mb-6">
               <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
@@ -176,6 +176,13 @@
           </form>
 
         </div>
+        <div>
+            <p>Reach out to our team:</p>
+            <p>E-mail: <a href="mailto:coboxvaccine.id@gmail.com">coboxvaccine.id@gmail.com</a></p>
+            <p>Whatsapp: +6287700553811</p>
+            <p>Phone: +6287700553811</p>
+            <p>Head: Green Hills Residence no 18, Jatihandap, Mandalajati, Kota Bandung</p>
+          </div>
       </div>
       
 

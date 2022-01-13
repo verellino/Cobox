@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Cobox',
+    title: 'Co-Box Vaccine Carrier',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A modified conventional vaccine carrier, that can keep the vaccine safe and maintain quality during the distribution process.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

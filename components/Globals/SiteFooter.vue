@@ -4,7 +4,7 @@
           <div class="max-w-7xl mx-auto flex flex-col sm:flex-row px-4 sm:px-6 lg:px-8 py-8 text-white">
               <div class="w-1/2">
                 <!-- logo  -->
-                <div class="flex items-center">
+                <div class="flex flex-col items-start">
                   <nuxt-link class="flex-shrink-0 mb-4" to="/">
                     <img
                       class="w-24 object-fit"
@@ -12,6 +12,13 @@
                       alt="Cobix logo"
                     >
                   </nuxt-link>
+                  <div class="text-sm">
+                    <p>Reach out to our team:</p>
+                    <p>E-mail: <a href="mailto:coboxvaccine.id@gmail.com">coboxvaccine.id@gmail.com</a></p>
+                    <p>Whatsapp: +6287700553811</p>
+                    <p>Phone: +6287700553811</p>
+                    <p>Head: Green Hills Residence no 18, Jatihandap, Mandalajati, Kota Bandung</p>
+                  </div>
                 </div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
               </div>

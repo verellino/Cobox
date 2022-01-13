@@ -42,8 +42,7 @@
           <h2>Reach out to our team</h2>
         </div>
         <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-          Great! Your message has been sent successfully. I will try to respond
-          quickly.
+          Great! Your message has been sent successfully!
         </div>
         <form 
         v-else 
@@ -97,6 +96,13 @@
               </div>
             </div>
           </form>
+          <div>
+            <p>Reach out to our team:</p>
+            <p>E-mail: <a href="mailto:coboxvaccine.id@gmail.com">coboxvaccine.id@gmail.com</a></p>
+            <p>Whatsapp: +6287700553811</p>
+            <p>Phone: +6287700553811</p>
+            <p>Head: Green Hills Residence no 18, Jatihandap, Mandalajati, Kota Bandung</p>
+          </div>
       </div>
       
 
